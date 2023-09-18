@@ -14,7 +14,7 @@ metadata:
   name: evn-demo
   labels:
     name: evn
-  namespace: dev-demo  
+  namespace: dev  
 spec:
   containers:
     - name: nopc
