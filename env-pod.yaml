@@ -13,13 +13,15 @@ kind: Pod
 metadata:
   name: evn-demo
   labels:
-    name: evn
+    name: lb-demo
   namespace: dev  
 spec:
   containers:
     - name: nopc
       image: suri1002/nopcommerce:devops
       ports:
+        - port: 80
+          protocol: TCP
       env:
         - name: purpose
           value: learning
