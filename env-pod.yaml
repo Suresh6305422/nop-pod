@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: evn-demo
+  labels:
+    name: evn
+  namespace: dev  
+spec:
+  containers:
+    - name: nopc
+      image: suri1002/nopcommerce:devops
+      ports:
+      env:
+        - name: purpose
+          value: learning
