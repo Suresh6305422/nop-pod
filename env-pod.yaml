@@ -3,8 +3,7 @@ kind: Pod
 metadata:
   name: evn-demo
   labels:
-    name: evn
-  namespace: dev  
+    name: evn 
 spec:
   containers:
     - name: nopc
